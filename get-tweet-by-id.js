@@ -8,7 +8,7 @@ export default () => {
     const tweetID = "c30d3099-e41b-4a16-b98b-070c01a33bf6"
 
     const res = http.get(
-        `${baseUrl}/api/tweets/${tweetID}`,
+        `${baseUrl}/tweets/${tweetID}`,
         { headers: headers }
     );
 

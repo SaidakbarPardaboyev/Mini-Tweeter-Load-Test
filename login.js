@@ -6,12 +6,12 @@ export let options = testOptions;
 
 export default () => {
     const payload = JSON.stringify({
-        username: "string",
-        password: "stringstring"
+        username: "stringstring",
+        password: "string"
     });
 
     const res = http.post(
-        `${baseUrl}/api/auth/login`,
+        `${baseUrl}/auth/login`,
         payload,
         { headers: headers }
     );

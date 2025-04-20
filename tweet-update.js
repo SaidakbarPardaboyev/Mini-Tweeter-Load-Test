@@ -12,7 +12,7 @@ export default () => {
     });
 
     const res = http.put(
-        `${baseUrl}/api/tweets`,
+        `${baseUrl}/tweets`,
         payload,
         { headers: headers }
     );

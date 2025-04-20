@@ -9,7 +9,7 @@ export default () => {
         "user_id": "5a2409f1-c58e-4ef6-9132-7131c66081bc"
     });
   
-    const res = http.post(`${baseUrl}/api/auth/logout`, payload, { 
+    const res = http.post(`${baseUrl}/auth/logout`, payload, { 
     headers: headers });
 
     check(res, { "status was 200": (r) => r.status == 200 });

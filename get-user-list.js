@@ -6,7 +6,7 @@ export let options = testOptions;
 
 export default () => {
     const res = http.get(
-        `${baseUrl}/api/users/list`,
+        `${baseUrl}/users/list`,
         { headers: headers }
     );
 

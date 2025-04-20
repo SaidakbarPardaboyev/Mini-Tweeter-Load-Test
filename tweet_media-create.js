@@ -12,7 +12,7 @@ export default () => {
     });
 
     const res = http.create(
-        `${baseUrl}/api/tweets-media`,
+        `${baseUrl}/tweets-media`,
         payload,
         { headers: headers }
     );

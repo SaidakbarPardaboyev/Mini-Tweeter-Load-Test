@@ -15,7 +15,7 @@ export default () => {
     });
 
     const res = http.post(
-        `${baseUrl}/api/auth/sign-up`,
+        `${baseUrl}/auth/sign-up`,
         payload,
         { headers: headers }
     );

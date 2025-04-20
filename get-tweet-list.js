@@ -6,7 +6,7 @@ export let options = testOptions;
 
 export default () => {
     const res = http.get(
-        `${baseUrl}/api/tweets/list`,
+        `${baseUrl}/tweets/list`,
         { headers: headers }
     );
 

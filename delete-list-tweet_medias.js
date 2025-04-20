@@ -8,7 +8,7 @@ export default () => {
     const tweetID = "c30d3099-e41b-4a16-b98b-070c01a33bf6";
 
     const res = http.del(
-        `${baseUrl}/api/tweets-media/tweet/${tweetID}`,
+        `${baseUrl}/tweets-media/tweet/${tweetID}`,
         { headers: headers }
     );
 

@@ -8,7 +8,7 @@ export default () => {
     const userID = "5a2409f1-c58e-4ef6-9132-7131c66081bc"
 
     const res = http.get(
-        `${baseUrl}/api/users/${userID}`,
+        `${baseUrl}/users/${userID}`,
         { headers: headers }
     );
 

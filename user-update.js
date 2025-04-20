@@ -16,7 +16,7 @@ export default () => {
     });
 
     const res = http.put(
-        `${baseUrl}/api/users`,
+        `${baseUrl}/users`,
         payload,
         { headers: headers }
     );
