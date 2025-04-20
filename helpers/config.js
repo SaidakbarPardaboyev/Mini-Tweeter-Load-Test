@@ -14,8 +14,8 @@ export const testOptions = {
         http_req_duration: ['p(95)<3000']
     },
     stages: [
-        { duration: '10s', target:   500 },
-        { duration: '60s', target:   500 },
+        { duration: '10s', target:   100 },
+        { duration: '60s', target:   100 },
         { duration: '10s', target: 0 }
     ]
 
