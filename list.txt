@@ -1,0 +1,195 @@
+RL: v2/object-slim/get-list/order
+METHOD: GET
+BODY:
+QUERY PARAMS: {"with_relations":true,"client_id":"f3134fe0-615f-4f47-b098-f685e7d97ac1","order":{"id":-1},"order_status":["waiting_for_payment","order_accepted","workshop_accepted","ready_for_delivery","courier_accepted","delivered","installer_accepted_order"]}
+----------------------------------
+URL: v2/items/request
+METHOD: POST
+BODY: {
+  "data": {
+    "client_id": "f3134fe0-615f-4f47-b098-f685e7d97ac1",
+    "client_phone": "+998777000777",
+    "full_name": "ORIGIN",
+    "status": [
+      "new"
+    ],
+    "created_time": "12.12.2024 10:40",
+    "location": "41.355581445268115,69.28796516257565",
+    "address": "Amir Temur shoh koʻchasi, 129B, Toshkent",
+    "master_status": [
+      "pending"
+    ],
+    "master_role_id": "599fa23a-cd04-456f-a916-0fa3bd50b6af",
+    "measurement_min_profit": 10.0
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-get-report-of-employee-salary
+METHOD: POST
+BODY: {
+  "data": {
+    "employee_id": "a612a908-9cde-47af-ad7d-1cedb58917f0",
+    "employee_type": "installer"
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v2/object-slim/get-list/order_employee
+METHOD: GET
+BODY:
+QUERY PARAMS: {"with_relations":true,"employee_id":"a612a908-9cde-47af-ad7d-1cedb58917f0","status":["pending"]}
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-create-user-with-request
+METHOD: POST
+BODY: {
+  "data": {
+    "client_name": "Abbos",
+    "client_phone": "+998777000707",
+    "region_id": "d93516fe-49a6-4529-ab26-b9e0c8a89fe3",
+    "address": "Amir Temur shoh koʻchasi, 129B, Toshkent",
+    "location": "41.355567908125195,69.28793821311713",
+    "comment": "",
+    "employee_id": "a7db93ac-d93f-4138-adb9-06438bfeb972",
+    "role_id": "03df7fde-223e-4041-9399-3c8c8efded28",
+    "client_type_id": "6ec5c7e2-ceb8-4bd8-b134-7babedf96149",
+    "fcm_token": "cbvZMBPMS8anZqhMAwTO4Y:APA91bHduHuTflWLMQoC0nCV3wqjTaOt8c2qEmFVevW7wdNXs_RreW-TvsIT0YX-UqCGMT0OVAUnXncsn-4UEeSTtPbu93c6QQyvlgRS_FZHH2wvzhtgOxU",
+    "platform_type": [
+      "android"
+    ],
+    "platform_language": [
+      "uz_Latn"
+    ],
+    "created_time": "2024-12-12 10:49"
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-get-locations-to-calculate-distance
+METHOD: POST 
+BODY: {
+  "data": {}
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v2/object-slim/get-list/door
+METHOD: GET
+BODY:
+QUERY PARAMS: {"data": {}}
+----------------------------------
+URL: /v2/object-slim/get-list/colored_items
+METHOD: GET
+BODY: 
+QUERY PARAMS: {"door_id":"113a05fb-cec5-4a72-b851-5ce02090630c","type":["color"],"with_relations":true}
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-order-create-new
+METHOD: POST
+BODY: {
+  "data": {
+    "room_id": "cb5b9ce2-1dd8-4a9b-9bd4-ab152ab278d4",
+    "door_image": "https://cdn.u-code.io/19317536-d0ae-433f-834d-635d11740e2e/Media/9d6b2d80-e148-49ee-a9df-d0403eeffcaf_door_1733982955747.png",
+    "width": "700",
+    "height": "2000",
+    "thickness": "25",
+    "count": 1,
+    "sales_unit": "dona",
+    "door_platband_type": "on_both_sides",
+    "door_platband_clip": "dioganal_clip",
+    "door_platband_name_prefix": "Наличник № 4  Г",
+    "door_boot_type": "on_both_sides",
+    "door_boot_id": "072a99d6-d5b1-452c-a8ba-4fae70ace3fe",
+    "door_crown_type": "on_both_sides",
+    "door_crown_id": "0fa480f6-7c52-4d21-a45a-9cd7348fd9d8",
+    "door_opening_type": "outside_right",
+    "door_veneer_type": "colored",
+    "door_veneer_id": "c79c7f95-9067-4ead-a633-d655ab714e49",
+    "door_step_type": "without_doorstep",
+    "door_handle_id": "767a7e72-521a-4f30-b8f8-7bc5c598c993",
+    "door_lock_type": "standart",
+    "door_lock_id": "ae45adc6-f0b2-4754-8973-e0350ba370e2",
+    "door_loop_type": "standart",
+    "door_loop_color_id": "c79c7f95-9067-4ead-a633-d655ab714e49",
+    "door_type": "Шпон. МДФ",
+    "model_id": "113a05fb-cec5-4a72-b851-5ce02090630c",
+    "trim_id": "f3563c85-d175-4a6a-bd63-0f6c7fde2069",
+    "product_type": "door"
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-calculate-employees-salary
+METHOD: POST
+BODY: {
+  "data": {
+    "order_product_ids": [
+      {
+        "product_id": "6eb1c623-e9ed-4799-8f95-f9f8454586c2",
+        "count": 1
+      }
+    ]
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-modify-product-quantity-and-total-cost
+METHOD: POST
+BODY: {
+  "data": {
+    "order_product_ids": [
+      {
+        "product_id": "6eb1c623-e9ed-4799-8f95-f9f8454586c2",
+        "count": 1
+      }
+    ]
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v2/items/order
+METHOD: POST
+BODY: {
+  "data": {
+    "order_type": [
+      "master"
+    ],
+    "total_sum": 3010964.36856,
+    "order_status": [
+      "waiting_for_payment"
+    ],
+    "installation_date": "12.12.2024 11:58",
+    "delivery_date": "12.12.2024 10:58",
+    "request_id": "3dff7793-1e4a-469e-b85c-ecbfc5eadeb7",
+    "order_product_ids": [
+      "6eb1c623-e9ed-4799-8f95-f9f8454586c2"
+    ],
+    "client_id": "1d25b952-35fb-4c5f-a499-fa5ba0089637",
+    "created_time": "12.12.2024 10:58",
+    "order_product_type": [
+      "door"
+    ],
+    "location": "41.355567908125195,69.28793821311713",
+    "address": "Amir Temur shoh koʻchasi, 129B, Toshkent",
+    "total_weight": 36.2415936,
+    "delivery_price": 5.8285599999999995
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-order-pdf-generate
+METHOD: POST
+BODY: {
+  "data": {
+    "order_id": "e4dbe029-fcf4-4f37-8cc7-11ec01a48571"
+  }
+}
+QUERY PARAMS:
+----------------------------------
+URL: /v1/invoke_function/brrauf-project-get-items-for-courier
+METHOD: POST
+BODY: {
+  "data": {
+    "order_id": "16034c32-5f67-436c-93bb-53a16a180830"
+  }
+}
+QUERY PARAMS:
+----------------------------------
